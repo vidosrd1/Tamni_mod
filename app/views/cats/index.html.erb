@@ -12,7 +12,14 @@
       text-white block font-medium" %>
     <% end %>
   </div>
+  <div data-controller="dark-mode">
   <hr />
+  <%= image_tag("icons/_VS2.svg",
+  src:"https://localhost:3000/images/icons/_VS2.svg",
+  class: 'hover:cursor-pointer',
+  width: "36%", height:"auto", loading:"lazy",
+  data: { action: 'click->dark-mode#toggle'}) %>
+  </div>
   <%= form_with(url: cats_path, method: :get,
   data: {controller: "search-form",
   turbo_frame: "cats", turbo_action: "advance"}) do |form| %>
@@ -65,4 +72,5 @@ focus:ring-orange-100" %>
     <% end %>
     </table>
   </div>
+  <br />
 </div>

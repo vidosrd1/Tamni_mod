@@ -5,8 +5,12 @@
     1dark:text-white
     1dark:text-slate-500">
       Svjetlosna energija</h2>
+    <div data-controller="dark-mode">
+      <%= image_tag("_create-a.png",
+      data: { action: 'click->dark-mode#toggle'}) %>
+    </div>
     <h3 class="1prose lg:prose-xl dark:text-white dark:text-slate-500">
-      Svjetlosna energija ili svjetlosna energija odnosi
+      Svjetlosna energija odnosi
       se na energiju koja se prenosi kroz svjetlosne talase.
     </h3>
     <p>
@@ -24,11 +28,11 @@
     kako se objekt zagrijava.
     </p>
     <p>
-    Svjetlosni talisi su materijalni objekt koji se kreće brže: brzina
+    Svjetlosni talasi su materijalni objekt koji se kreće brže: brzina
     svjetlosti je oko 300.000 kilometara u sekundi u vakuumu.
     </p>
     <p>
-      Možda ste zainteresirani za 10 najistaknutijih
+      Možda ste zainteresantni za 10 najistaknutijih
       svjetlosnih karakteristika.
     </p>
     <h3 class="1prose lg:prose-xl dark:text-white dark:text-slate-500">
@@ -37,12 +41,14 @@
     <p>
     Refrakcija se odnosi na promjenu u kretanju svjetla
     kada se medij u kojem se kreće pomiče.
-    Svjetlosna energija može se kretati različitim sredstvima kao što su zrak,
+    Svjetlosna energija može se kretati
+    različitim sredstvima kao što su vazduh,
     voda i čak vakuum, mijenjajući brzinu u svakom od tih medija.
     To se svojstvo može promatrati kroz ljudsko oko i objašnjava mnoge
     svakodnevne pojave, kao što je titranje zvijezda.
-    U svemiru, svjetlost putuje u vakuumu, pa kad uđe u Zemljinu atmosferu
-    mijenja medij. U toj promjeni, svjetlosni talasi mijenjaju brzinu i
+    U svemiru, svjetlost putuje u vakuumu,
+    pa kad uđe u Zemljinu atmosferu mijenja medij.
+    U toj promjeni, svjetlosni talasi mijenjaju brzinu i
     prolaze kroz refrakciju, zbog čega se promatra treperenje sa Zemlje.
     </p>
     <h4 class="prose lg:prose-xl  dark:text-white dark:text-slate-500">
@@ -175,22 +181,8 @@
     koji mogu biti opaženi ljudskim okom.
     Ti su talasi poznati kao "vidljivo svjetlo".
     </p>
-    <h4 class="prose lg:prose-xl dark:text-white dark:text-slate-500">
-      Reference</h4>
-    <ul>
-      <li>Bezgranična. (S.F.). Uvod u svjetlosnu energiju.
-        Oporavio se od boundless.com.
-      </li>
-      <li>Byjus. (2016). Svjetlosna energija. Preuzeto s byjus.com.</li>
-      <li>Nova svjetska enciklopedija. (S.F.). Svjetlo.
-        Preuzeto s newworldencyclopedia.org.</li>
-      <li>Stark, G. (2017). Svjetlo. Encyclopaedia Britannica.
-        Oporavio se od britannica.com.</li>
-      <li>Što je svjetlosna energija (S.F.). Svjetlosna energija.
-        Preuzeto s stranice whatislightenergy.com.</li>
-    </ul>
   </article>
-  <br />
+  <br /><br />
   <div>
     <h1 class="font-bold text-3xl
     1text-pink-500
@@ -380,7 +372,7 @@
         <div class="col">
           <div class="card shadow-sm">
             <figure class="kg-card kg-image-card kg-card-hascaption">
-              <%= image_tag("_VS.png",
+              <%= image_tag("icons/_VScopy.svg",
               class: 'w-120 h-100 hover:cursor-pointer',
               width: "100%", height:"auto", loading:"lazy",
               data: { action: 'click->dark-mode#toggle'}) %>
@@ -606,7 +598,7 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <figure class="ev ex ig ih ii ij er es paragraph-image">
-          <%= image_tag("_VS.png",
+          <%= image_tag("icons/_VScopy.svg",
           src:"https://localhost:3000/images/_VS.png",
           class: 'hover:cursor-pointer',
           width: "40%", height:"auto", loading:"lazy",
@@ -744,12 +736,12 @@
         <div class="1carousel-inner col-md-7">
           <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-body-secondary">Checkmate.</span></h2>
           <p class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            <%= image_tag("icons/_VS.svg",
-            src:"https://localhost:3000/images/icons/_VS2.svg",
+            <%= image_tag("icons/_VScopy.svg",
+            src:"https://localhost:3000/images/icons/_VS22.svg",
             class: 'hover:cursor-pointer',
             width: "36%", height:"auto", loading:"lazy",
             data: { action: 'click->dark-mode#toggle'}) %>
-            <%= image_tag("icons/_VS2.svg",
+            <%= image_tag("icons/_VS22.svg",
             src:"https://localhost:3000/images/icons/_VS2.svg",
             class: 'hover:cursor-pointer',
             width: "36%", height:"auto", loading:"lazy",

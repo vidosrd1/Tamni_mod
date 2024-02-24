@@ -32,20 +32,17 @@
     <h5 class="block font-medium mb-1 text-1xl">
       Art: <%= @list.art.name %>
     </h5>
+    <br />
     <div id="navbar" class="1collapse">
       <ul class="nav navbar-nav">
         <li style="width:650px; heigh:auto" class="">
-          <p style="width:650px; heigh:auto">
           <% if @list.image.attached? %>
             <%= link_to image_tag(@list.image,
             style:"width:640px; heigh:auto"), @list.image %>
           <% end %>
-          </p>
         <li><br /></li>
         <li class="">
-          <p style="width:400px; heigh:200px">
-            <%= @list.body %>
-          </p>
+          <%= @list.body %>
           <br />
         </li>
       </ul>
